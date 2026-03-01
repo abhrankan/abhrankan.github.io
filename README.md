@@ -1,12 +1,21 @@
-# Abhrankan Chakrabarti - Portfolio Website
+# Abhrankan Chakrabarti – Portfolio Website
 
-Welcome to my personal portfolio, showcasing selected projects in mathematics, programming, and technology.
+This is my personal portfolio website showcasing selected projects in mathematics, programming, and technology.
 
-## Highlights
-- **Embedded Sudoku Solver**: View my Sudoku Solver code directly on the site through an embedded GitHub Gist.
-- **Featured Projects**: Includes Pythagorean Triples Optimizer, Complex Calculator, and more.
+## Features
+- Embedded Sudoku Solver (via GitHub Gist)
+- Algorithmic and mathematical problem-solving projects
+- Clean and minimal responsive design
+
+## Featured Projects
+- Sudoku Solver
+- Pythagorean Triples Optimizer
+- Complex Number Calculator
+- More coming soon
 
 ## Contact
-For questions or collaborations, reach me at [abhrankan@gmail.com](mailto:abhrankan@gmail.com) or on [GitHub](https://github.com/Abhrankan-Chakrabarti).
+For collaborations or inquiries:
+Email: abhrankan@gmail.com  
+GitHub: https://github.com/Abhrankan-Chakrabarti
 
-Thank you for visiting!
+Thank you for visiting.
