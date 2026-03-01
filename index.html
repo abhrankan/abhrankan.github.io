@@ -3,47 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Abhrankan Chakrabarti</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Optional CSS for styling -->
+    <title>Abhrankan Chakrabarti | Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .project {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+
+        a {
+            color: #0077cc;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>Abhrankan Chakrabarti</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a curious individual interested in mathematics, programming, and technology. Welcome to my portfolio!</p>
-    </section>
+<header>
+    <h1>Abhrankan Chakrabarti</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        
-        <div class="project">
-            <h3>Sudoku Solver</h3>
-            <p>A simple Sudoku Solver with features such as difficulty levels and a step-by-step solving process.</p>
-            <script src="https://gist.github.com/Abhrankan-Chakrabarti/abd3cc2a71a03ea56b3a464d4ce17e72.js"></script>
-            <p><a href="https://github.com/Abhrankan-Chakrabarti" target="_blank">View on GitHub</a></p>
-        </div>
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I'm a mathematics and programming enthusiast exploring numerical methods,
+        algorithms, and computational problem-solving.
+    </p>
+</section>
 
-        <!-- Add more projects here -->
-    </section>
+<section id="projects">
+    <h2>Projects</h2>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you have any questions or feedback, feel free to reach out!</p>
-        <p>Email: <a href="mailto:abhrankan@gmail.com">abhrankan@gmail.com</a></p>
-    </section>
+    <div class="project">
+        <h3>Sudoku Solver</h3>
+        <p>
+            A Sudoku solver featuring difficulty levels and step-by-step solving logic.
+        </p>
+        <p>
+            <a href="https://gist.github.com/Abhrankan-Chakrabarti/abd3cc2a71a03ea56b3a464d4ce17e72" target="_blank">
+                View Code (GitHub Gist)
+            </a>
+        </p>
+        <p>
+            <a href="https://github.com/Abhrankan-Chakrabarti" target="_blank">
+                View More Projects on GitHub
+            </a>
+        </p>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Abhrankan Chakrabarti. All rights reserved.</p>
-    </footer>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:abhrankan@gmail.com">abhrankan@gmail.com</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Abhrankan Chakrabarti</p>
+</footer>
+
 </body>
 </html>
