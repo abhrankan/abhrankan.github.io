@@ -12,24 +12,20 @@ The portfolio features:
 
 ## Featured Projects
 
-- **Sudoku Solver**  
-  https://gist.github.com/Abhrankan-Chakrabarti/abd3cc2a71a03ea56b3a464d4ce17e72  
+- **[Sudoku Solver](https://gist.github.com/Abhrankan-Chakrabarti/abd3cc2a71a03ea56b3a464d4ce17e72)** – Step-by-step logical solving system  
 
-- **Almost Isosceles Pythagorean Triples Optimizer**  
-  https://github.com/Abhrankan-Chakrabarti/almost-isosceles-pythagorean-triples  
+- **[Almost Isosceles Pythagorean Triples Optimizer](https://github.com/Abhrankan-Chakrabarti/almost-isosceles-pythagorean-triples)** – Number theory meets algorithmic efficiency  
 
-- **Complex Number Calculator**  
-  https://github.com/Abhrankan-Chakrabarti/ComplexCalculator  
+- **[Complex Number Calculator](https://github.com/Abhrankan-Chakrabarti/ComplexCalculator)** – Interactive tool for complex arithmetic  
 
-- View all repositories:  
-  https://github.com/Abhrankan-Chakrabarti  
+- **[View All Repositories](https://github.com/Abhrankan-Chakrabarti)**  
 
 ## Contact
 
 For collaborations, academic discussions, or project inquiries:
 
-- Email: abhrankan@gmail.com  
-- GitHub: https://github.com/Abhrankan-Chakrabarti  
+- 📧 **Email:** [abhrankan@gmail.com](mailto:abhrankan@gmail.com)  
+- 🐙 **GitHub:** [github.com/Abhrankan-Chakrabarti](https://github.com/Abhrankan-Chakrabarti)  
 
 ---
 
