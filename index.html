@@ -1,118 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhrankan Chakrabarti | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhrankan Chakrabarti | Portfolio</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        header {
-            background: #222;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #0d1117;
+    color: #e6edf3;
+    line-height: 1.6;
+}
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
+/* HERO SECTION */
+header {
+    text-align: center;
+    padding: 100px 20px 60px 20px;
+}
 
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
+header p {
+    color: #8b949e;
+    font-size: 1.1rem;
+}
 
-        section {
-            padding: 40px;
-            max-width: 900px;
-            margin: auto;
-        }
+nav {
+    margin-top: 25px;
+}
 
-        .project {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.05);
-        }
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #58a6ff;
+    font-weight: 500;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #222;
-            color: white;
-        }
+nav a:hover {
+    text-decoration: underline;
+}
 
-        a {
-            color: #0077cc;
-        }
-    </style>
+/* SECTIONS */
+section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #30363d;
+    padding-bottom: 8px;
+}
+
+/* PROJECT CARD */
+.project {
+    background-color: #161b22;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    transition: transform 0.2s ease;
+}
+
+.project:hover {
+    transform: translateY(-4px);
+}
+
+.project h3 {
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #c9d1d9;
+    margin-bottom: 15px;
+}
+
+.project a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* CONTACT */
+.contact a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #30363d;
+    color: #8b949e;
+    margin-top: 60px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
     <h1>Abhrankan Chakrabarti</h1>
+    <p>Mathematics • Algorithms • Programming • Computational Exploration</p>
+    
     <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>
 
 <section id="about">
-    <h2>About Me</h2>
+    <h2>About</h2>
     <p>
-        I'm a mathematics and programming enthusiast exploring numerical methods,
-        algorithms, and computational problem-solving.
+        I am deeply interested in numerical methods, algorithm design, number theory,
+        and high-precision computational mathematics. I enjoy building elegant
+        mathematical solutions through code and exploring ideas at the intersection
+        of theory and computation.
     </p>
 </section>
 
 <section id="projects">
-    <h2>Projects</h2>
+    <h2>Featured Projects</h2>
 
     <div class="project">
-        <h3>Sudoku Solver</h3>
+        <h3>Catalan π Algorithm</h3>
         <p>
-            A Sudoku solver featuring difficulty levels and step-by-step solving logic.
+            A novel approach to calculating π using Catalan numbers and
+            fixed-point arithmetic.
         </p>
+        <a href="https://github.com/Abhrankan-Chakrabarti/pi-calculation-with-catalan-numbers" target="_blank">
+            View on GitHub →
+        </a>
+    </div>
+
+    <div class="project">
+        <h3>Almost Isosceles Pythagorean Triples</h3>
         <p>
-            <a href="https://gist.github.com/Abhrankan-Chakrabarti/abd3cc2a71a03ea56b3a464d4ce17e72" target="_blank">
-                View Code (GitHub Gist)
-            </a>
+            An exploration of number theory combined with algorithmic optimization.
         </p>
+        <a href="https://github.com/Abhrankan-Chakrabarti/almost-isosceles-pythagorean-triples" target="_blank">
+            View on GitHub →
+        </a>
+    </div>
+
+    <div class="project">
+        <h3>VisionaryAI</h3>
         <p>
-            <a href="https://github.com/Abhrankan-Chakrabarti" target="_blank">
-                View More Projects on GitHub
-            </a>
+            AI-powered web application integrating generative models for chat,
+            image captioning, and text-to-image generation.
         </p>
+        <a href="https://github.com/Abhrankan-Chakrabarti/GeminiFusion" target="_blank">
+            View on GitHub →
+        </a>
     </div>
 
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:abhrankan@gmail.com">abhrankan@gmail.com</a></p>
+    <div class="contact">
+        <p>Email: <a href="mailto:abhrankan@gmail.com">abhrankan@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Abhrankan-Chakrabarti" target="_blank">
+            github.com/Abhrankan-Chakrabarti
+        </a></p>
+    </div>
 </section>
 
 <footer>
-    <p>&copy; 2024 Abhrankan Chakrabarti</p>
+    © 2024 Abhrankan Chakrabarti
 </footer>
 
 </body>
