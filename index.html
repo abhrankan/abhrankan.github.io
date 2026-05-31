@@ -3,149 +3,228 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abhrankan Chakrabarti</title>
+<title>abhrankan</title>
 
 <style>
-body {
-    font-family: Georgia, "Times New Roman", serif;
-    background-color: #ffffff;
-    color: #111;
-    max-width: 760px;
-    margin: 90px auto;
-    padding: 0 24px;
-    line-height: 1.8;
-    font-size: 18px;
-}
+    :root {
+        --bg:       #0a0a0a;
+        --bg-card:  #111111;
+        --border:   #2a2a2a;
+        --text:     #d0d0d0;
+        --text-dim: #666666;
+        --accent:   #9ad1ff;
+        --red:      #ff003c;
+    }
 
-h1 {
-    font-weight: normal;
-    font-size: 34px;
-    margin-bottom: 4px;
-    letter-spacing: 0.5px;
-}
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-.subtitle {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 50px;
-}
+    body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1.7;
+        padding: 40px 20px;
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-h2 {
-    font-weight: normal;
-    font-size: 22px;
-    margin-top: 60px;
-    margin-bottom: 18px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 6px;
-}
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 20px;
+        margin-bottom: 60px;
+    }
 
-p {
-    margin-bottom: 20px;
-}
+    .logo {
+        font-size: 1.1rem;
+        font-weight: bold;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: var(--text);
+        text-decoration: none;
+    }
 
-a {
-    color: #000;
-    text-decoration: none;
-    border-bottom: 1px solid #aaa;
-}
+    /* Hero */
+    .hero {
+        margin-bottom: 70px;
+    }
 
-a:hover {
-    border-bottom: 1px solid #000;
-}
+    .hero h1 {
+        font-size: 1.6rem;
+        font-weight: normal;
+        color: #ffffff;
+        letter-spacing: 2px;
+        margin-bottom: 14px;
+        line-height: 1.4;
+    }
 
-ul {
-    margin-left: 22px;
-}
+    .hero p {
+        font-size: 0.92rem;
+        color: var(--text-dim);
+        max-width: 520px;
+    }
 
-li {
-    margin-bottom: 10px;
-}
+    /* Section */
+    h2 {
+        font-size: 0.75rem;
+        font-weight: normal;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--text-dim);
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 8px;
+        margin-bottom: 0;
+    }
 
-footer {
-    margin-top: 80px;
-    font-size: 14px;
-    color: #777;
-}
+    section { margin-bottom: 60px; }
+
+    /* Project list */
+    .project-list { list-style: none; }
+
+    .project-list li {
+        border-bottom: 1px solid var(--border);
+    }
+
+    .project-list a {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 16px 0;
+        color: var(--text);
+        text-decoration: none;
+        font-size: 0.9rem;
+        gap: 20px;
+    }
+
+    .project-list a:hover { color: var(--accent); }
+
+    .project-list .tag {
+        font-size: 0.72rem;
+        color: var(--text-dim);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        flex-shrink: 0;
+    }
+
+    .tag-red { color: var(--red); opacity: 0.7; }
+
+    /* Tor notice */
+    .tor-notice {
+        font-size: 0.78rem;
+        color: var(--text-dim);
+        margin-top: 16px;
+        padding: 12px 16px;
+        border: 1px solid var(--border);
+        background: var(--bg-card);
+    }
+
+    .tor-notice a {
+        color: var(--accent);
+        text-decoration: none;
+    }
+
+    .tor-notice a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer {
+        margin-top: 80px;
+        border-top: 1px solid var(--border);
+        padding-top: 20px;
+        font-size: 0.8rem;
+        color: var(--text-dim);
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    footer a {
+        color: var(--text-dim);
+        text-decoration: none;
+    }
+
+    footer a:hover { color: var(--accent); }
 </style>
 </head>
-
 <body>
 
-<h1>Abhrankan Chakrabarti</h1>
-<div class="subtitle">
-Mathematics · Algorithms · Computational Methods
+<header>
+    <span class="logo">abhrankan</span>
+</header>
+
+<div class="hero">
+    <h1>Static sites.<br>Hidden services.<br>Signal environments.</h1>
+    <p>Building on the edges of the web. No tracking. No unnecessary complexity. Static where possible. Minimal always.</p>
 </div>
 
-<h2>About</h2>
-<p>
-I am interested in numerical methods, number theory, algorithm design, 
-and high-precision computational mathematics. My work focuses on 
-developing mathematically elegant and computationally efficient solutions 
-to challenging problems.
-</p>
+<section>
+    <h2>Tor Hidden Services</h2>
+    <ul class="project-list">
+        <li>
+            <a href="http://ftk4x6klwl5uwkgk75smxlod5hvxy4ayjct42vicubivznxjx5fyilyd.onion/deergrit/" target="_blank" rel="noopener">
+                Deergrit
+                <span class="tag">Knowledge Archive</span>
+            </a>
+        </li>
+        <li>
+            <a href="http://ftk4x6klwl5uwkgk75smxlod5hvxy4ayjct42vicubivznxjx5fyilyd.onion/fantasycrop/" target="_blank" rel="noopener">
+                FantasyCrop
+                <span class="tag">Web Laboratory</span>
+            </a>
+        </li>
+        <li>
+            <a href="http://ftk4x6klwl5uwkgk75smxlod5hvxy4ayjct42vicubivznxjx5fyilyd.onion/flatspoil/" target="_blank" rel="noopener">
+                Flatspoil
+                <span class="tag">Plain Explanations</span>
+            </a>
+        </li>
+        <li>
+            <a href="http://senpjoekkf4hlth6ej5lyqoizi62ois6u44zpd5vucuzo3w4sz4tw3qd.onion/luggageice/" target="_blank" rel="noopener">
+                Luggage Ice
+                <span class="tag">Technical Essays</span>
+            </a>
+        </li>
+        <li>
+            <a href="http://senpjoekkf4hlth6ej5lyqoizi62ois6u44zpd5vucuzo3w4sz4tw3qd.onion/rallymean/" target="_blank" rel="noopener">
+                RallyMean
+                <span class="tag tag-red">Signal Environment</span>
+            </a>
+        </li>
+        <li>
+            <a href="http://ftk4x6klwl5uwkgk75smxlod5hvxy4ayjct42vicubivznxjx5fyilyd.onion/videoonly/" target="_blank" rel="noopener">
+                Videoonly
+                <span class="tag">Confession Archive</span>
+            </a>
+        </li>
+    </ul>
 
-<h2>Selected Projects</h2>
-<ul>
-    <li>
-        <a href="https://github.com/Abhrankan-Chakrabarti/Internship_caseStudies" target="_blank">
-        Winternship 2025 Case Studies</a> — Full MERN stack training: TypeScript, React, MongoDB, Express.js.
-    </li>
-    <li>
-        <a href="https://github.com/Abhrankan-Chakrabarti/LlamaInteract" target="_blank">
-        LlamaInteract</a> — Local LLM interaction system using llama.cpp for on-device inference.
-    </li>
-    <li>
-        <a href="https://github.com/Abhrankan-Chakrabarti/pi-calculation-with-catalan-numbers" target="_blank">
-        Catalan π Algorithm</a> — A novel method for computing π using Catalan numbers.
-    </li>
-    <li>
-        <a href="https://github.com/Abhrankan-Chakrabarti/almost-isosceles-pythagorean-triples" target="_blank">
-        Almost Isosceles Pythagorean Triples</a> — Algorithmic exploration in number theory.
-    </li>
-    <li>
-        <a href="https://github.com/Abhrankan-Chakrabarti/GeminiFusion" target="_blank">
-        VisionaryAI</a> — AI-integrated web application combining generative models.
-    </li>
-</ul>
+    <div class="tor-notice">
+        Tor hidden services require <a href="https://www.torproject.org/download/" target="_blank" rel="noopener">Tor Browser</a> to access.
+    </div>
+</section>
 
-<h2>Writing</h2>
-<p>
-Selected essays on mathematics, computation, and the history of ideas:
-</p>
-
-<ul>
-    <li>
-        <a href="https://abhrankan.dpdns.org/mathematics/algorithms/2024/06/21/calculating-pi" target="_blank">
-        Calculating π with Catalan Numbers
-        </a>
-    </li>
-    <li>
-        <a href="https://abhrankan.dpdns.org/2024/07/21/the-golden-ratio.html" target="_blank">
-        The Golden Ratio
-        </a>
-    </li>
-    <li>
-        <a href="https://abhrankan.dpdns.org/2024/07/10/history-of-cryptography.html" target="_blank">
-        History of Cryptography
-        </a>
-    </li>
-</ul>
-
-<h2>Resume</h2>
-<p>
-<a href="https://github.com/Abhrankan-Chakrabarti/Abhrankan-Chakrabarti/raw/main/Abhrankan_Chakrabarti_Resume.pdf" target="_blank">
-Download PDF</a>
-</p>
-
-<h2>Contact</h2>
-<p>
-Email: <a href="mailto:abhrankan@gmail.com">abhrankan@gmail.com</a><br>
-GitHub: <a href="https://github.com/Abhrankan-Chakrabarti" target="_blank">
-github.com/Abhrankan-Chakrabarti</a>
-</p>
+<section>
+    <h2>Clearnet</h2>
+    <ul class="project-list">
+        <li>
+            <a href="https://rallymean.netlify.app" target="_blank" rel="noopener">
+                RallyMean
+                <span class="tag tag-red">ARG — Surface Layer</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://signalvsnoise.netlify.app" target="_blank" rel="noopener">
+                Signal vs Noise
+                <span class="tag tag-red">ARG — Multi-node</span>
+            </a>
+        </li>
+    </ul>
+</section>
 
 <footer>
-© 2026 Abhrankan Chakrabarti
+    <span>github.com/<a href="https://github.com/abhrankan" target="_blank" rel="noopener">abhrankan</a></span>
 </footer>
 
 </body>
