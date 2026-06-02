@@ -3,228 +3,322 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>abhrankan</title>
 
 <style>
-    :root {
-        --bg:       #0a0a0a;
-        --bg-card:  #111111;
-        --border:   #2a2a2a;
-        --text:     #d0d0d0;
-        --text-dim: #666666;
-        --accent:   #9ad1ff;
-        --red:      #ff003c;
+:root{
+    --bg:#0a0a0a;
+    --bg-card:#111111;
+    --border:#2a2a2a;
+    --text:#d0d0d0;
+    --text-dim:#666666;
+    --accent:#9ad1ff;
+    --red:#ff003c;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Courier New", Courier, monospace;
+    line-height:1.7;
+    max-width:760px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+header{
+    border-bottom:1px solid var(--border);
+    padding-bottom:20px;
+    margin-bottom:60px;
+}
+
+.logo{
+    font-size:1.05rem;
+    font-weight:bold;
+    letter-spacing:4px;
+    text-transform:uppercase;
+}
+
+.logo::after{
+    content:"_";
+    animation:blink 1s infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0;
     }
+}
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+.hero{
+    margin-bottom:80px;
+}
 
-    body {
-        background: var(--bg);
-        color: var(--text);
-        font-family: 'Courier New', Courier, monospace;
-        line-height: 1.7;
-        padding: 40px 20px;
-        max-width: 760px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.hero h1{
+    font-size:1.7rem;
+    font-weight:normal;
+    color:#ffffff;
+    line-height:1.5;
+    letter-spacing:2px;
+    margin-bottom:18px;
+}
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        border-bottom: 1px solid var(--border);
-        padding-bottom: 20px;
-        margin-bottom: 60px;
-    }
+.hero p{
+    color:var(--text-dim);
+    max-width:560px;
+    font-size:0.92rem;
+}
 
-    .logo {
-        font-size: 1.1rem;
-        font-weight: bold;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        color: var(--text);
-        text-decoration: none;
-    }
+section{
+    margin-bottom:70px;
+}
 
-    /* Hero */
-    .hero {
-        margin-bottom: 70px;
-    }
+h2{
+    font-size:0.75rem;
+    font-weight:normal;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    color:var(--text-dim);
+    border-bottom:1px solid var(--border);
+    padding-bottom:8px;
+    margin-bottom:16px;
+}
 
-    .hero h1 {
-        font-size: 1.6rem;
-        font-weight: normal;
-        color: #ffffff;
-        letter-spacing: 2px;
-        margin-bottom: 14px;
-        line-height: 1.4;
-    }
+.manifesto{
+    color:var(--text-dim);
+    max-width:620px;
+}
 
-    .hero p {
-        font-size: 0.92rem;
-        color: var(--text-dim);
-        max-width: 520px;
-    }
+.project-list{
+    list-style:none;
+}
 
-    /* Section */
-    h2 {
-        font-size: 0.75rem;
-        font-weight: normal;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        color: var(--text-dim);
-        border-bottom: 1px solid var(--border);
-        padding-bottom: 8px;
-        margin-bottom: 0;
-    }
+.project-list li{
+    border-bottom:1px solid var(--border);
+}
 
-    section { margin-bottom: 60px; }
+.project-list a{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:20px;
+    text-decoration:none;
+    color:var(--text);
+    padding:16px 0;
+    transition:0.15s ease;
+}
 
-    /* Project list */
-    .project-list { list-style: none; }
+.project-list a:hover{
+    color:var(--accent);
+}
 
-    .project-list li {
-        border-bottom: 1px solid var(--border);
-    }
+.tag{
+    font-size:0.72rem;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:var(--text-dim);
+    flex-shrink:0;
+}
 
-    .project-list a {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        padding: 16px 0;
-        color: var(--text);
-        text-decoration: none;
-        font-size: 0.9rem;
-        gap: 20px;
-    }
+.tag-red{
+    color:var(--red);
+    opacity:0.75;
+}
 
-    .project-list a:hover { color: var(--accent); }
+.tor-notice{
+    margin-top:18px;
+    padding:14px 16px;
+    border:1px solid var(--border);
+    background:var(--bg-card);
+    color:var(--text-dim);
+    font-size:0.8rem;
+}
 
-    .project-list .tag {
-        font-size: 0.72rem;
-        color: var(--text-dim);
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        flex-shrink: 0;
-    }
+.tor-notice a{
+    color:var(--accent);
+    text-decoration:none;
+}
 
-    .tag-red { color: var(--red); opacity: 0.7; }
+.tor-notice a:hover{
+    text-decoration:underline;
+}
 
-    /* Tor notice */
-    .tor-notice {
-        font-size: 0.78rem;
-        color: var(--text-dim);
-        margin-top: 16px;
-        padding: 12px 16px;
-        border: 1px solid var(--border);
-        background: var(--bg-card);
-    }
+footer{
+    margin-top:90px;
+    border-top:1px solid var(--border);
+    padding-top:20px;
+    color:var(--text-dim);
+    font-size:0.8rem;
 
-    .tor-notice a {
-        color: var(--accent);
-        text-decoration: none;
-    }
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+}
 
-    .tor-notice a:hover { text-decoration: underline; }
+footer a{
+    color:var(--text-dim);
+    text-decoration:none;
+}
 
-    /* Footer */
-    footer {
-        margin-top: 80px;
-        border-top: 1px solid var(--border);
-        padding-top: 20px;
-        font-size: 0.8rem;
-        color: var(--text-dim);
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-    }
+footer a:hover{
+    color:var(--accent);
+}
 
-    footer a {
-        color: var(--text-dim);
-        text-decoration: none;
-    }
-
-    footer a:hover { color: var(--accent); }
+::selection{
+    background:var(--accent);
+    color:#000;
+}
 </style>
 </head>
+
 <body>
 
 <header>
-    <span class="logo">abhrankan</span>
+    <div class="logo">abhrankan</div>
 </header>
 
 <div class="hero">
-    <h1>Static sites.<br>Hidden services.<br>Signal environments.</h1>
-    <p>Building on the edges of the web. No tracking. No unnecessary complexity. Static where possible. Minimal always.</p>
+    <h1>
+        Static systems.<br>
+        Hidden networks.<br>
+        Signal over noise.
+    </h1>
+
+    <p>
+        Building on the edges of the web.
+        No tracking. No analytics.
+        No unnecessary complexity.
+        Static where possible.
+        Minimal always.
+    </p>
 </div>
 
 <section>
+    <h2>Manifesto</h2>
+
+    <div class="manifesto">
+        Most websites become more complicated over time.
+        These projects move in the opposite direction.
+
+        <br><br>
+
+        No tracking.
+        No analytics.
+        No accounts.
+        No unnecessary JavaScript.
+
+        <br><br>
+
+        The goal is not scale.
+
+        <br>
+
+        The goal is signal.
+    </div>
+</section>
+
+<section>
+
     <h2>Tor Hidden Services</h2>
+
     <ul class="project-list">
+
         <li>
             <a href="http://ftk4x6klwl5uwkgk75smxlod5hvxy4ayjct42vicubivznxjx5fyilyd.onion/deergrit/" target="_blank" rel="noopener">
                 Deergrit
                 <span class="tag">Knowledge Archive</span>
             </a>
         </li>
+
         <li>
             <a href="http://ftk4x6klwl5uwkgk75smxlod5hvxy4ayjct42vicubivznxjx5fyilyd.onion/fantasycrop/" target="_blank" rel="noopener">
                 FantasyCrop
                 <span class="tag">Web Laboratory</span>
             </a>
         </li>
+
         <li>
             <a href="http://ftk4x6klwl5uwkgk75smxlod5hvxy4ayjct42vicubivznxjx5fyilyd.onion/flatspoil/" target="_blank" rel="noopener">
                 Flatspoil
                 <span class="tag">Plain Explanations</span>
             </a>
         </li>
+
         <li>
             <a href="http://senpjoekkf4hlth6ej5lyqoizi62ois6u44zpd5vucuzo3w4sz4tw3qd.onion/luggageice/" target="_blank" rel="noopener">
                 Luggage Ice
                 <span class="tag">Technical Essays</span>
             </a>
         </li>
+
         <li>
             <a href="http://senpjoekkf4hlth6ej5lyqoizi62ois6u44zpd5vucuzo3w4sz4tw3qd.onion/rallymean/" target="_blank" rel="noopener">
                 RallyMean
                 <span class="tag tag-red">Signal Environment</span>
             </a>
         </li>
+
         <li>
             <a href="http://ftk4x6klwl5uwkgk75smxlod5hvxy4ayjct42vicubivznxjx5fyilyd.onion/videoonly/" target="_blank" rel="noopener">
                 Videoonly
                 <span class="tag">Confession Archive</span>
             </a>
         </li>
+
     </ul>
 
     <div class="tor-notice">
-        Tor hidden services require <a href="https://www.torproject.org/download/" target="_blank" rel="noopener">Tor Browser</a> to access.
+        Tor hidden services require
+        <a href="https://www.torproject.org/download/" target="_blank" rel="noopener">
+            Tor Browser
+        </a>
+        for access.
     </div>
+
 </section>
 
 <section>
+
     <h2>Clearnet</h2>
+
     <ul class="project-list">
+
         <li>
             <a href="https://rallymean.netlify.app" target="_blank" rel="noopener">
                 RallyMean
                 <span class="tag tag-red">ARG — Surface Layer</span>
             </a>
         </li>
+
         <li>
             <a href="https://signalvsnoise.netlify.app" target="_blank" rel="noopener">
                 Signal vs Noise
-                <span class="tag tag-red">ARG — Multi-node</span>
+                <span class="tag tag-red">ARG — Multi-Node</span>
             </a>
         </li>
+
     </ul>
+
 </section>
 
 <footer>
-    <span>github.com/<a href="https://github.com/abhrankan" target="_blank" rel="noopener">abhrankan</a></span>
+
+    <span>Signal survives noise.</span>
+
+    <span>
+        <a href="https://github.com/abhrankan" target="_blank" rel="noopener">
+            github.com/abhrankan
+        </a>
+    </span>
+
 </footer>
 
 </body>
